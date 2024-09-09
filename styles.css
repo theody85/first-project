@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#hero {
+  background-image: url("./img/heroBg.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#hero-title {
+  color: white;
+  font-size: 3rem;
+}
+
+#hero-subtext {
+  color: white;
+  font-size: 1.2rem;
+}
+
+#hero-button {
+  background-color: chocolate;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+}
+
+nav {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+#logo {
+  font-size: 30px;
+}
+
+#logo-dot {
+  color: chocolate;
+  font-weight: bold;
+}
+
+#navlinks {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+}
+
+#navlinks a {
+  text-decoration: none;
+  color: black;
+}
+
+#works {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  row-gap: 70px;
+}
+
+.header {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  gap: 50px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  opacity: 0;
+}
+.gallery-overlay:hover {
+  opacity: 1;
+}
+
+#features {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 8rem 0;
+  padding: 0 10rem;
+  column-gap: 3rem;
+}
+
+.feature-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.feature-title {
+  color: chocolate;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.feature-list li {
+  display: flex;
+  column-gap: 20px;
+}
